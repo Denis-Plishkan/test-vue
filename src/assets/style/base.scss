@@ -1,0 +1,22 @@
+@use 'reset';
+@use 'media';
+
+body {
+  font-weight: bold;
+}
+
+[class$='__container'] {
+  max-width: 1390px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1 1 auto;
+  margin-top: 30px;
+}
+
+#app {
+  height: 100%;
+}

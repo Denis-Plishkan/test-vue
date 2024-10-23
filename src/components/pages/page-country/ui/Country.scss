@@ -1,0 +1,26 @@
+.v-breadcrumbs {
+  font-size: 12px;
+}
+
+.country {
+  &__cards .card {
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  &__years-button {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+  }
+}

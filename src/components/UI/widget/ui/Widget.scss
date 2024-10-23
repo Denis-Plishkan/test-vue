@@ -1,0 +1,30 @@
+@use '@/assets/style/media' as *;
+
+.widget {
+  &__wrapper {
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+    @include media-breakpoint-down(my) {
+      padding: 20px;
+    }
+  }
+
+  &__wrapper-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  &__wrapper .card {
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+@use '@/assets/style/media' as *;
+
+.card {
+  max-width: 300px;
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+
+  p span {
+    font-weight: 600;
+  }
+
+  p {
+    max-width: 450px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include media-breakpoint-down(md) {
+      max-width: 350px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      max-width: 250px;
+    }
+  }
+}
